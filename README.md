@@ -144,12 +144,4 @@ Record a 3-5 min video showing:
 ✅ Dart enables Hot Reload  
 ✅ One codebase = All platforms
 
----
 
-## Resources
-
-- [Flutter Docs](https://flutter.dev/docs)
-- [Dart Tour](https://dart.dev/guides/language/language-tour)
-- [DartPad](https://dartpad.dev/)
-
-**Sprint 2 Assignment** | January 20, 2026

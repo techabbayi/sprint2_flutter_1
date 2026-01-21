@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../services/auth_service.dart';
 import '../services/firestore_service.dart';
 import 'login_screen.dart';
+import 'registration_form_screen.dart';
 
 class TasksScreen extends StatefulWidget {
   const TasksScreen({super.key});
@@ -109,6 +110,17 @@ class _TasksScreenState extends State<TasksScreen> {
         title: const Text('Firebase Tasks'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         actions: [
+          IconButton(
+            icon: const Icon(Icons.app_registration),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const RegistrationFormScreen(),
+                ),
+              );
+            },
+            tooltip: 'Registration Form',
+          ),
           IconButton(
             icon: const Icon(Icons.logout),
             onPressed: _signOut,

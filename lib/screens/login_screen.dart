@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/auth_service.dart';
-import 'tasks_screen.dart';
+import 'registration_form_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -54,7 +54,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (mounted) {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => const TasksScreen()),
+          MaterialPageRoute(
+            builder: (context) => const RegistrationFormScreen(),
+          ),
         );
       }
     } catch (e) {
